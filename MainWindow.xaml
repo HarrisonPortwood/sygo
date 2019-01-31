@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Sygo - Keep track of your time." Height="500" Width="250" Foreground="{x:Null}" WindowStyle="None" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="icon.png">
+    <Window.Background>
+        <ImageBrush ImageSource="bg.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid x:Name="Grid" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="250">
+        <Grid x:Name="PermTitle" Margin="61.5,3.5,3.5,408.932">
+            <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="66.487" Margin="0.686,3.068,58.686,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125.628" Text="SYGO" Foreground="White" FontWeight="Bold" FontSize="48"/>
+            <Button x:Name="exitBtn" Content="X" HorizontalAlignment="Right" Height="14.18" VerticalAlignment="Top" Width="17" FontSize="7" BorderBrush="{x:Null}" Background="#33DDDDDD" Click="ExitBtn_Click"/>
+            <Button x:Name="minimizeBtn" Content="_" HorizontalAlignment="Right" Margin="0,0,16.5,0" Width="17" FontSize="7" BorderBrush="{x:Null}" Background="#33DDDDDD" Height="14" VerticalAlignment="Top" Click="MinimizeBtn_Click"/>
+            <TextBlock x:Name="Slogan" HorizontalAlignment="Center" Height="25.513" Margin="0,62.055,58,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Foreground="White" Text="Keep track of your time."/>
+        </Grid>
+        <Grid x:Name="Stopwatch" Margin="23.25,210.244">
+            <TextBlock x:Name="Hours" HorizontalAlignment="Center" Height="16.012" TextWrapping="Wrap" VerticalAlignment="Top" Width="32.499" Foreground="White" Text="Hours" Margin="16.207,62.05,154.794,0"/>
+            <TextBlock x:Name="Minutes" HorizontalAlignment="Center" Height="16.012" TextWrapping="Wrap" VerticalAlignment="Top" Width="43.5" Foreground="White" Margin="79.207,62.05,80.793,0"><Run Text="Minutes"/><LineBreak/><Run/></TextBlock>
+            <TextBlock x:Name="Seconds" HorizontalAlignment="Center" Height="16.012" TextWrapping="Wrap" VerticalAlignment="Top" Width="44.5" Foreground="White" Text="Seconds" Margin="147.207,62.05,11.793,0"/>
+            <TextBlock x:Name="TimerTitle" HorizontalAlignment="Center" Height="25.513" TextWrapping="Wrap" VerticalAlignment="Center" Width="148.455" Foreground="White" Text="You have been working for:" Margin="27.023,0,28.022,53.999"/>
+        </Grid>
+        <Button x:Name="StartStop" Content="START" HorizontalAlignment="Center" Height="26.5" Margin="86.364,335.5,86.364,0" VerticalAlignment="Top" Width="77.272" BorderBrush="#FF007F46" Background="#3F858585" FontSize="14" FontWeight="Bold" Foreground="White" Click="StartStop_Click"/>
+        <Label x:Name="EmailResult" Content="" HorizontalAlignment="Center" Height="24" Margin="0,0,0,45" VerticalAlignment="Bottom" Width="160.75" Foreground="White" MouseLeftButtonUp="EmailResult_MouseLeftButtonUp"/>
+        <Button x:Name="Reset" Content="RESET" HorizontalAlignment="Center" Height="26.5" Margin="86.364,374.5,86.364,0" VerticalAlignment="Top" Width="77.272" BorderBrush="#FFFFF300" Background="#3F858585" FontSize="14" FontWeight="Bold" Foreground="White" Click="Reset_Click" Visibility="Hidden"/>
+        <Label x:Name="lblTimer" Content="00:00:00" HorizontalAlignment="Left" Margin="25,211,0,0" VerticalAlignment="Top" Width="204" Height="79" FontSize="48" FontWeight="Bold" Foreground="White"/>
+    </Grid>
+</Window>
