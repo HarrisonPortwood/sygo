@@ -9,5 +9,3 @@ Sygo was designed with the user in mind. It is simple, looks great and is lightw
 - Ability to email time worked at a click of a button
 - UI changes (clean up buttons and code)
 ### Contributors welcome!
-
-![Sygo](https://raw.githubusercontent.com/HarrisonPortwood/sygo/master/sygofull.png "Sygo. Fast and Simple.")
