@@ -95,5 +95,22 @@ namespace WpfApp1
         {
 
         }
+
+        private void WelcomeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GotItBtn_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.Application.Restart();
+
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }
