@@ -9,7 +9,7 @@ Sygo was designed with the user in mind. It is simple, looks great and is lightw
 - v.01.00 - Pushed main project to git
 
 #### Future Plans
-- Timer functionality
+- Countdown Timer
 - Ability to email time worked at a click of a button
 - UI changes (clean up buttons and code)
 #### Contributors welcome!
