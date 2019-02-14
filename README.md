@@ -15,4 +15,6 @@ https://youtu.be/gHilUYi4DkE
 - Countdown Timer
 - Ability to email time worked at a click of a button
 - UI changes (clean up buttons and code)
-#### Contributors welcome!
+
+## 🤝 Contribute [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+If you are interested in participating in joint development, Fork and PR are welcome.
